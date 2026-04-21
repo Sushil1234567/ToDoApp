@@ -1,8 +1,11 @@
+DEBUG = True
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todo',
 ]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
