@@ -1,4 +1,4 @@
-```python
+
 INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todo',
