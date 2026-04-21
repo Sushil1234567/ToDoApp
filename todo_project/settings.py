@@ -1,7 +1,7 @@
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
 STATIC_URL = '/static/'
-ROOT_URLCONF = 'urls.py' 
+ROOT_URLCONF = 'todo_project.urls'
 
 
 INSTALLED_APPS = [
