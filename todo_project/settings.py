@@ -1,5 +1,6 @@
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
+STATIC_URL = '/static/'
 
 INSTALLED_APPS = [
     'django.contrib.staticfiles',
