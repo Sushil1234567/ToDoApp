@@ -2,7 +2,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 STATIC_URL = '/static/'
 ROOT_URLCONF = 'todo_project.urls'
-
+SECRET_KEY = 'django-insecure-abc123xyz456yourkey'
 
 INSTALLED_APPS = [
     'django.contrib.staticfiles',
