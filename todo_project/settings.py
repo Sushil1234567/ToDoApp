@@ -3,53 +3,38 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY
-SECRET_KEY = 'django-insecure-abc123xyz456'
+SECRET_KEY = 'dev-secret-key-123'   # change in production
 DEBUG = True
 ALLOWED_HOSTS = ["*"]   # for Docker / EC2
 
-# APPLICATIONS
+# INSTALLED APPS (minimal)
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    'todo',
+    'django.contrib.contenttypes',   # required internally
+    'django.contrib.staticfiles',    # for static files
+    'todo',                          # your app
 ]
 
-# MIDDLEWARE (Required for admin)
+# MIDDLEWARE (minimal)
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
-# URL CONFIG
+# ROOT URL CONFIG
 ROOT_URLCONF = 'todo_project.urls'
 
-# TEMPLATES
+# TEMPLATES (required for HTML rendering)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True,   # important for app templates
         'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
+            'context_processors': [],
         },
     },
 ]
 
-# DATABASE (not used, but Django expects it)
+# DATABASE (dummy, Django expects it)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -60,7 +45,5 @@ DATABASES = {
 # STATIC FILES
 STATIC_URL = '/static/'
 
-# DEFAULT AUTO FIELD (required in Django 5+)
+# DEFAULT FIELD (needed in Django 5+)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
