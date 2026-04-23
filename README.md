@@ -13,5 +13,5 @@ python manage.py runserver
 
 
 
-![Alt Text]<img width="956" height="568" alt="image" src="https://github.com/user-attachments/assets/e1f693e2-3c98-45ff-a342-697e780958f9" />
+![Alt Text](<img width="956" height="568" alt="image" src="https://github.com/user-attachments/assets/e1f693e2-3c98-45ff-a342-697e780958f9" />)
 
