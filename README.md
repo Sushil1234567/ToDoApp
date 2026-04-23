@@ -13,6 +13,5 @@ python manage.py runserver
 
 
 
-[Image](<img width="956" height="568" alt="image" src="https://github.com/user-attachments/assets/28ad4103-4a8a-4118-89cc-4d7cd5739492" />
-)
+
 
